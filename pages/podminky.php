@@ -2,7 +2,7 @@
     <div class="ct-5__text__col">
         <h2>Psychologické poradenství, individuální psychoterapie:</h2>
 
-        <p>Běžná cena za hodinu setkání (50 minut) je 700,- Kč.</p>
+        <p>Běžná cena za hodinu setkání (50 minut) je 800,- Kč.</p>
 
         <p>Rodičům na mateřské a rodičovské dovolené, studentům, důchodcům, handicapovaným a jiným znevýhodněným
             skupinám
@@ -12,9 +12,9 @@
 
         <h2>Rodinná a párová terapie:</h2>
 
-        <p>Běžná cena za hodinu setkání (50 minut) je 900,- Kč, za hodinu a půl (80 minut) je 1200,-Kč za pár či rodinu.
+        <p>Běžná cena za hodinu setkání (50 minut) je 1000,- Kč, za hodinu a půl (80 minut) je 1300,-Kč za pár či rodinu.
             V
-            případě, že párovou či rodinou terapii vedu s kolegyní je cena za hodinu (50 min) 1200,- Kč.</p>
+            případě, že párovou či rodinou terapii vedu s kolegyní je cena za hodinu (50 min) 1500,- Kč.</p>
 
         <h2>Skupinová terapie</h2>
 

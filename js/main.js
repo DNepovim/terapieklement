@@ -29,12 +29,6 @@ function highlighting() {
         var divHeight = $(theID).height(); // get the height of the div in question
         if (windowPos >= divPos - 50 && windowPos < (divPos + divHeight) - 50) {
             $("a[href='" + theID + "']").addClass("nav-active");
-            if (theID == '#kontakt' || theID == '#napistemi') {
-                $('.banner').css({'visibility': 'hidden'});
-            } //hide and show contact banner
-            else {
-                $('.banner').css({'visibility': 'visible'});
-            }
         } else {
             $("a[href='" + theID + "']").removeClass("nav-active");
         }
@@ -50,7 +44,6 @@ function highlighting() {
 }
 
 $(document).ready(function () {
-    $('.banner').css({'visibility': 'visible'});
     scrolling();
     highlighting();
     $(window).scroll(function () {
@@ -63,16 +56,15 @@ $(document).ready(function () {
     $('a.button').on('click', function (e) { //scroll effect in menu
         var odkaz = $(this).attr('href'),
             menu = $('#nav'),
-            rychlost = 2 * 1000,
-            efekt = "easeOutExpo";
+            rychlost = 2 * 1000;
 
         $("html, body").stop().animate(
             {scrollTop: $(odkaz).offset().top - menu.height()},
-            rychlost, efekt);
+            rychlost);
 
         e.preventDefault();
         if ($('.nav-box__ham').css('display') == 'block') {
-            $('.nav-box__nav').slideUp(300); //hde menu in mobile
+            $('.nav-box__nav').slideUp(300); //hide menu in mobile
         }
     });
 
@@ -85,32 +77,6 @@ $(document).ready(function () {
         $(this).stop().fadeOut();
         $('.bg-6 iframe').removeClass('bg-6--grey');
     });
-
-    $('.banner__show').click(function () { //open and close and change color in contact banner
-        if (parseInt($(this).parent().css('right'), 10) < 0) {
-            $('.banner__body').animate({'border-color': '#2b4500', 'right': '0'}, 500, 'easeOutExpo');
-            $('.banner').animate({'right': '0'}, 500, 'easeOutExpo');
-            $(this).animate({'background-color': '#2b4500'}, 500, 'easeOutExpo');
-        } else {
-            $(this).animate({'background-color': 'rgba(43, 69, 0, 0.8)'}, 500, 'easeOutExpo');
-            $('.banner__body').animate({'border-color': 'rgba(43, 69, 0, 0.8)', 'right': '-380px'}, 500, 'easeOutExpo');
-            $('.banner').animate({'right': '-365px'}, 500, 'easeOutExpo');
-        }
-    }).mouseenter(function () { //hover effect
-        if (parseInt($('.banner').css('right'), 10) == -365) {
-            $(this).stop().animate({'background-color': '#2b4500'}, 500, 'easeOutExpo')
-        }
-    }).mouseleave(function () { //hover effect
-        if (parseInt($('.banner').css('right'), 10) == -365) {
-            $(this).stop().animate({'background-color': 'rgba(43, 69, 0, 0.8)'}, 500, 'easeOutExpo')
-        }
-    });
-
-    jQuery.extend(jQuery.validator.messages, {required: ""}); //form validation
-    $("#form1").validate();
-    $('#form1').ajaxForm({'target': '.response1'}); //response when form is send
-    $("#form2").validate();
-    $('#form2').ajaxForm({'target': '.response2'}); //response when form is send
 
 });
 

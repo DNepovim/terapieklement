@@ -20,7 +20,6 @@
             <li><a class="button" href="#jakpracuji">Jak pracuji</a></li>
             <li><a class="button" href="#podminky">Podmínky</a></li>
             <li><a class="button" href="#kontakt">Kontakt</a></li>
-            <li class="mobileonly"><a class="button" href="#napistemi">Napište&thinsp;mi</a></li>
         </ul>
     </div>
 </div>
@@ -70,14 +69,10 @@
     <?php include 'pages/kontakt.php'; ?>
     <div class="bg-6__grey"></div>
     <iframe class="bg-6--grey"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2658.783846008549!2d14.444597000000002!3d50.108197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94b521c929cf%3A0x85d8a8cb3e69579e!2sPlyn%C3%A1rn%C3%AD+1032%2F29%2C+170+00+Praha-Praha+7%2C+Czech+Republic!5e1!3m2!1sen!2scz!4v1441050843870"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.118372369343!2d14.400645415677964!3d50.07837382198562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94fc049b459b%3A0xf4a87c2ec46a57cb!2s31%2C+2+patro%2C+Hole%C4%8Dkova+332%2F5%2C+150+00+Praha-Sm%C3%ADchov!5e1!3m2!1scs!2scz!4v1538504717593"
             frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<?php include 'banner.php' ?>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/validation/jquery.validate.min.js"></script>
-<script src="http://malsup.github.com/jquery.form.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
